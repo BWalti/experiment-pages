@@ -4,14 +4,15 @@
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <div id="app">
-  {{ message }}
+  {{ counter }}
+  <button @click="counter++">Increase</button><button @click="counter--">Decrease</button>
 </div>
 
 <script>
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue!'
+    counter: 0
   }
 })
 </script>
